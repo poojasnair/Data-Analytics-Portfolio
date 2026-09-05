@@ -1,0 +1,32 @@
+Healthcare & Customer Metrics Analysis
+Overview
+This repository contains a data analysis project exploring customer health metrics and clinical profiles across 2,335 individual records. The objective of this project is to organize, analyze, and gain actionable insights from patient health indicators such as BMI, HbA1c levels, underlying conditions, and diabetes status.
+
+Dataset Structure
+The dataset (Module 1 end assignment.xlsx) consists of two relational worksheets linked by a unique identifier (Customer ID):
+
+Customer Demographics: Contains customer identity information including Customer ID, Title, First Name, and Last name.
+
+Clinical Metrics: Tracks individual health risk factors and clinical diagnostics:
+
+Body Metrics: BMI (Body Mass Index) and Weight status (e.g., Normal, Obesity).
+
+Blood Sugar Diagnostics: HBA1C levels and categorized Daibetes Status (Normal, Pre-Diabetes, Diabetes).
+
+Medical History: Indicators for Heart Issues, Any Transplants, Cancer history, and NumberOfMajorSurgeries.
+
+Lifestyle Factors: Smoker status.
+
+Tools & Technologies
+Data Processing: Excel / Python (pandas)
+
+Visualization: Excel Charts / Python (matplotlib, seaborn)
+
+Version Control: Git & GitHub
+
+Key Features & Analyses
+Data Integration: Joined demographic records with health metrics via unique Customer ID keys.
+
+Health Risk Segmentation: Categorized customer records based on diabetes risk levels and BMI ranges.
+
+Lifestyle & Condition Correlation: Evaluated associations between smoking history, major surgeries, and chronic conditions.
