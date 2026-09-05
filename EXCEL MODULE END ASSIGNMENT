@@ -1,32 +1,35 @@
-Healthcare & Customer Metrics Analysis
-Overview
-This repository contains a data analysis project exploring customer health metrics and clinical profiles across 2,335 individual records. The objective of this project is to organize, analyze, and gain actionable insights from patient health indicators such as BMI, HbA1c levels, underlying conditions, and diabetes status.
+# Healthcare & Customer Metrics Data Analysis
 
-Dataset Structure
-The dataset (Module 1 end assignment.xlsx) consists of two relational worksheets linked by a unique identifier (Customer ID):
+## Project Overview
+This project presents an end-to-end data analysis of healthcare records, clinical indicators, and hospital billing details across 2,335 patients. The primary goal is to examine key health drivers—such as BMI, HbA1c levels, smoking status, and underlying medical conditions—and evaluate their impact on medical charges and hospital placement.
 
-Customer Demographics: Contains customer identity information including Customer ID, Title, First Name, and Last name.
+---
 
-Clinical Metrics: Tracks individual health risk factors and clinical diagnostics:
+## Dataset Architecture
+The workbook (`Module 1 end assignment.xlsx`) consists of multiple relational worksheets joined via `Customer ID`:
 
-Body Metrics: BMI (Body Mass Index) and Weight status (e.g., Normal, Obesity).
+* **Customer Names**: Patient demographic identity (`Customer ID`, `Title`, `First Name`, `Last Name`).
+* **Medical Examination**: Patient clinical profile (`BMI`, `HBA1C`, `Heart Issues`, `Transplants`, `Cancer History`, `Surgeries`, `Smoker`, `Weight Status`, `Diabetes Status`).
+* **Hospitalisation Details**: Financial and facility data (`Date of Birth`, `Age`, `Children`, `Charges`, `Hospital Tier`, `City Tier`, `State ID`).
+* **Healthcare (Merged Data)**: Consolidated master dataset bringing together demographics, clinical indicators, and financial metrics.
+* **Pivot Table & Dashboard**: Summaries and interactive visual breakdowns of healthcare expenses and health risks.
 
-Blood Sugar Diagnostics: HBA1C levels and categorized Daibetes Status (Normal, Pre-Diabetes, Diabetes).
+---
 
-Medical History: Indicators for Heart Issues, Any Transplants, Cancer history, and NumberOfMajorSurgeries.
+## Key Analyses & Insights
+* **Financial Impact of Health Risks**: Analyzed how factors like smoking, obesity, and diabetes status heavily correlate with higher hospitalization costs.
+* **Demographic & Location Trends**: Visualized medical expense patterns across different city tiers, hospital tiers, and regional state IDs.
+* **Surgical & Condition Profiling**: Grouped patients by major surgery counts and chronic condition flags to assess healthcare resource utilization.
 
-Lifestyle Factors: Smoker status.
+---
 
-Tools & Technologies
-Data Processing: Excel / Python (pandas)
+## Technologies Used
+* **Microsoft Excel**: Data cleaning, VLOOKUP/XLOOKUP merges, Pivot Tables, Conditional Formatting, and Dashboard Creation.
+* **GitHub**: Project documentation and repository management.
 
-Visualization: Excel Charts / Python (matplotlib, seaborn)
+---
 
-Version Control: Git & GitHub
-
-Key Features & Analyses
-Data Integration: Joined demographic records with health metrics via unique Customer ID keys.
-
-Health Risk Segmentation: Categorized customer records based on diabetes risk levels and BMI ranges.
-
-Lifestyle & Condition Correlation: Evaluated associations between smoking history, major surgeries, and chronic conditions.
+## How to View
+1. Download `Module 1 end assignment.xlsx` directly from this repository.
+2. Open the file in Microsoft Excel or Google Sheets.
+3. Navigate to the **DASHBOARD** and **PIVOT TABLE** tabs to explore the summarized data and visual metrics.
